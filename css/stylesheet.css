@@ -1,0 +1,217 @@
+
+* {
+	font-family: Arial;
+}
+
+#sortButtons, #pageResults {
+	display: flex;
+	justify-content: center;
+}
+
+#sortButtons {
+	margin-left: 58px;
+}
+
+#sortButtons .btn {
+	border: none;
+	outline: none;
+	background-color: #bafcff;
+	cursor: pointer;
+	color: #0face0;
+	box-shadow: 0.1px 0.5px 0.1px #888888;
+	width: 130px;
+	height: 45px;
+	margin-right: 20px;
+}
+
+#sortButtons .active, #sortButtons .btn:hover {
+	background-color: #0face0;
+	color: white;
+}
+
+.hotelHead {
+	display: flex;
+}
+
+.hotelName {
+	float: left;
+	text-align: left;
+	padding: 7px 0px 7px 7px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #092f82;
+	border-right: 2px solid;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	background-color: #d2e4ef;
+	width: 77%;
+}
+
+.hotelName .a {
+	font-size: 12px;
+}
+
+.hotelName .b {
+	font-size: 10px;
+}
+
+.hotelPrice {
+	float: right;
+	text-align: right;
+	font-size: 10px;
+	font-weight: bold;
+	-webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+	padding: 7px;
+	background-color: #ffdc19;
+	color: #092f82;
+	width: 25%;
+}
+
+.hotelPrice b {
+	font-size: 15px;
+}
+
+.imgContainer {
+	height: 240px;
+	overflow: hidden;
+	margin: 0;
+}
+
+.imgContainer img {
+	display: block;
+	width: 100%;
+	margin:-10% 0;
+}
+
+.hotelInfoCollapsible {
+	text-align: left;
+	word-wrap: break-word;
+	font-size: 12px;
+	padding: 0 7px;
+	background-color: #0face0;
+	color: white;
+	font-weight: 100;
+	width: 100%;
+	height: 45px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+
+.hotelInfoCollapsible p {
+	float: left;
+	width: 70%;
+}
+
+.active, .hotelInfoCollapsible:hover {
+	background-color: #0d91bc;
+}
+
+.hotelInfo {
+	padding: 0 7px;
+	max-height: 0;
+	overflow: hidden;
+	display: block;
+	opacity: 0;
+	background-color: #eaf3f7;
+	transition: max-height 0.2s ease-out;
+}
+
+.hotelInfoCollapsible:after {
+	content: '\276F';
+	color: white;
+	font-weight: bold;
+	font-size: 18px;
+	float: right;
+	margin-top: 8px;
+}
+
+.active:after {
+  -webkit-transform: rotate(90deg); /* Safari and Chrome */
+  -moz-transform: rotate(90deg);   /* Firefox */
+  -ms-transform: rotate(90deg);   /* IE 9 */
+  -o-transform: rotate(90deg);   /* Opera */
+  transform: rotate(90deg);
+}
+
+.hotelTop, .imgContainer, .hotelBottom {
+	display: block;
+	width: 435px;
+}
+
+.hotelBottom {
+	font-size: 12px;
+	color: #0face0;
+	margin-bottom: 15px;
+	box-shadow: 0px 1px 1px #888888;
+}
+
+.btnBookNow {
+	display: block;
+	font-weight: bold;
+	background-color: #092f82;
+	box-shadow: 2px 2px 2px #888888;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	width: 125px;
+	height: 50px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+}
+
+#filter {
+	display: table;
+	visibility: visible;
+	overflow: hidden;
+	clear: both;
+	margin: 0 auto;
+}
+
+#filterDate, #filterAirport {
+	margin-top: 20px;
+	color: #092f82;
+	font-weight: bold;
+	margin: 10px auto;
+}
+
+[type="date"] {
+	background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  97% 50% no-repeat ;
+}
+[type="date"]::-webkit-inner-spin-button {
+	display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+	opacity: 0;
+}
+
+#filterDate input {
+	border: 1px solid #c4c4c4;
+	border-radius: 5px;
+	background-color: #fff;
+	padding: 3px 5px;
+	box-shadow: inset 0 3px 6px rgba(0,0,0,0.1);
+	width: 190px;
+}
+
+#btnFilter {
+	display: table;
+	clear: both;
+	margin: 0 auto;
+	font-weight: bold;
+	background-color: #092f82;
+	box-shadow: 2px 2px 2px #888888;
+	color: white;
+	border: none;
+	border-radius: 2px;
+	width: 50px;
+	height: 25px;
+}
+
+#filterAirport select {
+	width: 170px;
+}
+

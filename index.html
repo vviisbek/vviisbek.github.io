@@ -1,0 +1,31 @@
+<DOCTYPE! html>
+<html>
+<head>
+	<title>On The Beach</title>
+	<link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body background="assets/background.jpg" onload="javascript:addDepartureLocations();sortByPrice(results);">
+	<section id="sortButtons">
+		<button id="btnNameSort" class="btn" type="button" onclick="sortByName(results)">sort <b>alphabetically</b></button>
+		<button id="btnPriceSort" class="btn active" type="button" onclick="sortByPrice(results)">sort by <b>price</b></button>
+		<button id="btnStarSort" class="btn" type="button" onclick="sortByStarRating(results)">sort by <b>star rating</b></button>
+	</section>
+	<section id="filter">
+		<div id="filterDate">
+			<label>Departure date:</label>
+			<input type="date" name="Date" id="departureDate">
+		</div>
+		<div id="filterAirport">
+			<label>Departure airport:</label>
+			<select id="departureLocation"></select>
+		</div>
+		<button id="btnFilter" class="btn" type="button" onclick="showResults(results)">
+			Filter
+		</button>
+	</section>
+	<main>
+		<p id="pageResults"></p>	
+	</main>
+	<script src="js/script.js"></script>
+</body>
+</html>
